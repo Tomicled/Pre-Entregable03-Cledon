@@ -1,36 +1,53 @@
-@import 'variables';
-
+/* Archivo de Media Queries SCSS */
 @media (max-width: 767px) {
     .navbar-nav {
-        text-align: center;
+      text-align: center;
     }
-
+  
     .carousel-item {
-        height: 70vh;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      &.active {
+        transform: none;
+      }
     }
-
+  
     .w-100 {
-        height: 70vh;
+      height: 70vh;
     }
-
+  
     .carousel-caption {
-        bottom: 125px;
-
-        h5 {
-            font-size: $font-size-small;
-        }
-
-        a {
-            padding: 10px 15px;
-            font-size: $font-size-small;
-        }
-
-        p {
-            width: 100%;
-            line-height: 1.5;
-            font-size: $font-size-small;
-        }
+      bottom: 125px;
+      background: rgba($primary-color, 0.8);
+  
+      h5 {
+        font-size: 17px;
+      }
+  
+      a {
+        font-size: 15px;
+      }
+  
+      p {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 12px;
+      }
     }
-
-
-}
+  
+    .about-text {
+      padding-top: 50px;
+    }
+  
+    .card {
+      margin-bottom: 30px;
+    }
+  
+    .section-padding {
+      padding: 50px 0;
+    }
+  }
+  
