@@ -1,0 +1,35 @@
+@import 'variables';
+
+* {
+    font-family: $font-family;
+}
+
+.section-padding {
+    padding: $padding-section 0;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: $padding-carousel-caption;
+    z-index: 2;
+
+    h5 {
+        font-size: $font-size-large;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 25px;
+    }
+
+    p {
+        width: 60%;
+        margin: auto;
+        font-size: $font-size-medium;
+        line-height: 1.9;
+    }
+}
+
+
